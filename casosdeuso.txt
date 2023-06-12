@@ -1,0 +1,65 @@
+--> CASO DE USO 1 - ADICIONAR O PRODUTO
+- 1. Objetivo: cadastrar um produto
+- 2. Atores: administrador
+- 3. Fluxo principal:
+- Administrador clica em "adicionar produto"
+- Sistema mostra tela de cadastro com campos necessários para preenchimento
+- Administrador preenche informações do produto
+- Após preenchimento, adminsitrador clica em registrar produto, se problema encontrado seguir para Fluxo Alternativo.
+- Sistema exibe mensagem "Produto cadastrado".
+
+- 4. Fluxo alternativo:
+- 4.1 Fluxo Alternativo 1:
+- Administrador não preencheu os campos necessários e clicou em registrar produto
+- Sistema exibe mensagem "Informações insuficientes" e exibe tela de cadastro novamente voltando para o Fluxo Principal.
+- 4.2 Fluxo Alternativo 2:
+- Administrador preenche os campos e clica em registrar produto, porém as informações são de um produto já existente.
+-  Sistema exibe mensagem "Produto já cadastrado".
+ 
+--> CASO DE USO 2 - ATUALIZAR UM PRODUTO
+- 1. Objetivo: atualizar o cadastro de um produto
+- 2. Atores: administrador
+- 3. Fluxo principal:
+- Administrador clica em "atualizar produto"
+- Sistema mostra tela de pesquisa para o produto ser selecionado
+- Administrador seleciona o produto que quer atualizar
+- Sistema mostra tela de cadastro do produto
+- Administrador modifica as informações desejadas
+- Sistema exibem mensagem "Produto atualizado"
+- 4. Fluxo Alternativo:
+- Administrador não preencheu os campos necessários e clicou em atualizar produto
+- Sistema exibe mensagem "Informações insuficientes" e exibe tela de cadastro novamente voltando para o Fluxo Principal.
+
+--> CASO DE USO 3 - DELETAR UM PRODUTO
+- 1. Objetivo: excluir um produto
+- 2. Atores: administrador
+- 3. Fluxo principal:
+- Administrador clica em "deletar produto"
+- Sistema mostra tela de pesquisa para o produto ser selecionado
+- Administrador seleciona o produto que quer deletar clica em excluir
+- Sistema exibe mensagem "Produto excluido"
+- 4. Fluxo Alternativo:
+- Administrador pesquisa por produto inexistente
+- Sistema exibe mensagem "Produto não foi encontrado" e exibe a tela de pesquisa novamente, retornando ao Fluxo Principal.
+
+--> CASO DE USO 4 - LISTAR UM PRODUTO
+- 1. Objetivo: mostrar um produto
+- 2. Atores: administrador
+- 3. Fluxo principal:
+- Administrador clica em "listar produto"
+- Sistema mostra tela de pesquisa 
+- Administrador digita codigo do produto que deseja
+- Sistema exibe todas as informações do produto
+- 4. Fluxo Alternativo:
+- Administrador pesquisa por produto inexistente
+- Sistema exibe mensagem "Produto não foi encontrado" e exibe a tela de pesquisa novamente, retornando ao Fluxo Principal.
+
+--> CASO DE USO 5 - LISTAR TODOS OS PRODUTOS
+- 1. Objetivo: mostrar um produto
+- 2. Atores: administrador
+- 3. Fluxo principal:
+- Administrador clica em "listar todos produtos"
+- Sistema exibe todos os produtos cadastrados
+- 4. Fluxo Alternativo:
+- Administrador clica em "listar todos produtos"
+- Sistema não possui nenhum produto cadastrado, exibe mensagem "Nenhum produto cadastrado". 
